@@ -1,0 +1,740 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0px;
+
+}
+
+.ham {
+    display: none;
+
+}
+
+.menuback {
+    display: none;
+}
+
+.navbrlogo img {
+    height: 40px;
+    width: 100px;
+}
+
+.nav_link {
+    display: flex;
+
+}
+
+.nav_link li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.nav_link li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: rgb(20, 20, 24);
+}
+
+.logi_bnt button {
+    padding: 7px 25px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #0ceec5;
+    border-radius: 2px;
+}
+.logi_bnt button:hover{
+    color: white;
+    background-color: #449a8a;
+}
+
+.header {
+    background-image: url(./image/pexels-andrea-piacquadio-3764402.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+
+.header-text {
+    padding: 20px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    color: white;
+}
+
+.header-text h1 {
+    font-size: 50px;
+}
+
+.header-text p {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.header-text .logi_bnt {
+    padding-top: 20px;
+}
+
+.header-text .logi_bnt button {
+    border: none;
+    padding: 7px 28px;
+    color: rgb(18, 16, 16);
+    cursor: pointer;
+}
+
+.shop_categories_text {
+    padding: 70px 25px;
+    background-color: #f0f3f5;
+}
+
+.shop_categories_text h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.shop_categories_cards {
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: scroll;
+    margin-top: 50px;
+    opacity: 1.8;
+}
+
+.shop_categories_cards::-webkit-scrollbar {
+    display: none;
+}
+
+.shop_cord {
+    margin-left: 20px;
+    position: relative;
+    flex-basis: 30%;
+    height: 200px;
+    width: 180px;
+
+}
+
+.shop_cord img {
+    height: 200px;
+    width: 180px;
+}
+
+.shop_cord h3 {
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    visibility: hidden;
+}
+
+.shop_cord:hover h3 {
+    bottom: 30px;
+    visibility: visible;
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.shop_cord:hover .overlay {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 180px;
+
+
+}
+
+.shop_categories_cards:hover> :not(:hover) {
+    opacity: 4;
+}
+
+
+
+
+
+
+
+.online_shop_header {
+    padding: 50px 0;
+
+}
+
+.online_shop_inner {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: start;
+
+}
+
+.online_shop_text {
+    max-width: 500px;
+    padding: 20px 8px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.online_shop_text h2 {
+    color: #6d44bc;
+    padding-bottom: 15px;
+    font-weight: bold;
+
+}
+
+.online_shop_image {
+    max-width: 250px;
+    height: 250px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.online_shop_image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+
+.our_brand_header {
+    padding: 70PX 20px;
+    background-color: #f0f3f5;
+}
+
+.our_brands {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(2, 90px);
+    grid-template-columns: repeat(4, minmax(90px, 300px));
+    grid-gap: 20px;
+
+
+}
+
+.our_brand_text {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.our_brand_text h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.our_brand_div {
+    border: 1px solid rgb(21, 21, 21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+.our_brand_div img {
+    height: 30px;
+    width: 90px;
+}
+
+
+
+
+
+.Payment_Process_header {
+    padding: 60PX 40px;
+}
+
+.Payment_Process_inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.payment_process_text{
+    width: 310px;
+    border: 1px solid black;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f3f5;
+}
+.payment_process_text h3{
+    padding: 14px 0 0 0;
+    
+}
+.payment_process_text p{
+    padding-bottom : 20px;
+}
+.Payment_Process_div1,
+.Payment_Process_div2,
+.Payment_Process_div3 {
+    background-image: url(./image/card1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 273.34px;
+    width: 310px;
+   
+}
+
+.Payment_Process_div2 {
+    background-image: url(./image/card2.png);
+
+}
+
+.Payment_Process_div3 {
+    background-image: url(./image/card3.png);
+
+}
+
+
+/* ===============================login section================= */
+
+
+.login_header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) ,url(./image/pexels-kampus-production-7514879.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.login_div{
+    max-width: 668px;
+    width: 100%;    
+    position: absolute;
+    right:40px;
+    top: 50px;
+    padding: 60px 30px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.login__field input[type="password"],
+.login__field input[type="text"]{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+   padding: 12px 0;
+   font-size: 16px;
+}
+.login__field input[type="password"]:focus,
+.login__field input[type="text"]:focus{
+    outline: none;
+    color: rgb(10, 10, 10);
+}
+.login__field input[type="password"]:focus label{
+    color:  red;
+}
+.login__field {
+    /* border: 2px solid red; */
+    margin: 60px 0;
+    position: relative;
+}
+.login__field label{
+    display: inline-block;
+   position: absolute;
+   top: 10px;
+   left: 10px;
+}
+
+.login__submit{
+    margin-top: 50px;
+    width: 100%;
+    padding: 8px ;
+}
+
+::placeholder:hover{
+    color: red;
+}
+
+
+
+
+/* ===========================contact us======================== */
+
+.contacts-us {
+    text-align: center;
+}
+
+.contacts-us>h2 {
+    font-family: Poppins;
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 74px;
+    color: #4540D9;
+}
+
+.contacts-us>p {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #717171;
+
+}
+
+.contact-inner-div {
+    max-width: 1370px;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    padding: 30px;
+}
+
+.aside-contact {
+    max-width: 600px;
+    width: 100%;
+    background: #4540D9;
+    padding: 40px;
+    border-radius: 12.8px 12.8px 0 12.8px;
+    position: relative;
+    overflow: hidden;
+    height: 799px;
+}
+
+.Contact-Information h2 {
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 52px;
+}
+
+.Contact-Information>p {
+    color: #C9C9C9;
+
+}
+
+.Contact-Information-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #FFFFFF;
+    margin-top: 70px;
+
+
+}
+
+.Contact-Information-text .div {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    align-items: center;
+
+}
+
+.Contact-Information-text .fa-solid {
+    height: 60px;
+    width: 60px;
+    margin-right: 24px;
+    height: 19.759197235107422px;
+    width: 24.69899559020996px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.Contact-Information-text .fa-regular {
+    height: 19.759197235107422px;
+    width: 24.69899559020996px;
+    color: #FFFFFF;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.Contact-Information-text>p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.circle-div1 {
+    position: absolute;
+    right: -140px;
+    bottom: -140px;
+    background: #C3C0F1;
+    height: 332.2015075683594px;
+    width: 332.2015075683594px;
+    border-radius: 100%;
+    z-index: 1;
+
+}
+
+.circle-div2 {
+    position: absolute;
+    height: 150.42308044433594px;
+    width: 150.42308044433594px;
+    border-radius: 100%;
+    background: #F1F1FB;
+    right: 70px;
+    bottom: 70px;
+
+
+}
+
+.social-icon-div {
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.social-icon-div .fa-brands {
+    height: 37.819397926330566px;
+    width: 37.524248123168945px;
+    border-radius: 50%;
+    color: #1B1B1B;
+    background: #FFFFFF;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.social-icon-div .fa-solid {
+    height: 37.819397926330566px;
+    width: 37.524248123168945px;
+    border-radius: 50%;
+    color: #1B1B1B;
+    background: #FFFFFF;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon-div .fa-solid:hover,
+.social-icon-div .fa-brands:hover {
+    background: #1B1B1B;
+    color: #FFFFFF;
+}
+
+.bside-contact {
+    max-width: 700PX;
+    width: 100%;
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+.form-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-div div {
+    max-width: 300px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+.form-div input[ type="text"],
+input[ type="number"] {
+    outline: none;
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #8D8D8D;
+    padding-top: 10px;
+
+}
+
+.form-div label {
+    margin-top: 30px;
+}
+
+.form-div textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #8D8D8D;
+    resize: none;
+    padding-top: 10px;
+}
+
+form input[ type="text"]:focus,
+input[ type="number"]:focus {
+    color: #8D8D8D;
+
+}
+
+.send-massage {
+    padding-top: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.send-massage button {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    padding: 8px 35px;
+    background: #4540D9;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+@media only screen and (max-width:998px) {
+    .contact-inner-div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media only screen and (max-width:998px) {
+    .nav_link {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: rgb(244, 237, 237);
+        width: 50%;
+        height: 100%;
+        z-index: 100;
+        transition: 0.5s ease-in;
+    }
+
+    .nav_link li {
+        text-align: start;
+        margin: 16px 0px 0px 30px;
+
+    }
+
+    .nav_link li:hover {
+        background-color: crimson;
+    }
+
+    .nav_link li:hover a {
+        color: white;
+    }
+
+    .ham {
+        display: flex;
+        position: absolute;
+        right: 30px;
+        top: 28px;
+        font-size: 28px;
+
+    }
+
+    .logi_bnt button {
+        display: none;
+    }
+
+    .menuback {
+        display: flex;
+        position: absolute;
+        right: 30px;
+        top: 28px;
+        font-size: 28px;
+        z-index: 200;
+        visibility: hidden;
+    }
+
+    .online_shop_inner {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width:558px) {
+    .contact-inner-div {
+        margin: 25px auto;
+        padding: 0 20px;
+    }
+
+    .aside-contact {
+        padding: 35px;
+
+    }
+
+    .contacts-us>p {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .Contact-Information-text {
+        margin-top: 50px;
+    }
+
+    .menuback {
+        right: 13px;
+        top: 15px;
+        font-size: 25px;
+
+    }
+
+    .our_brands {
+        display: grid;
+        grid-template-rows: repeat(4, 90px);
+        grid-template-columns: repeat(2, minmax(90px, 300px));
+
+    }
+}

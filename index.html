@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <navbar>
+            <div class="navbrlogo">
+                <img src="./image/Asset.png">
+            </div>
+            <div class="ham">
+                <i class="fa-solid fa-bars" id="ham-menu"></i>
+            </div>
+            <div>
+                <ul class="nav_link">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                    <li><a href="">service</a></li>
+                    <div class="menuback">
+                        <i class="fa-solid fa-xmark" id="back-menu"></i>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="logi_bnt">
+                <button>login</button>
+            </div>
+        </navbar>
+    </section>
+    <section>
+        <div class="header">
+            <div class="header-text">
+                <h1>Make Your Business Online</h1>
+                <p>Now register your store on localville partner app and make<br> your business online with us.</p>
+                <div class="logi_bnt">
+                    <button>login</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="shop_categories_text">
+            <h2>Shop Our Top Categories</h2>
+            <div class="shop_categories_cards">
+                <div class="shop_cord">
+                    <span class="overlay"></span>
+                    <img src="./image/fashion.png">
+                    <h3>fashion</h3>
+                </div>
+                <div class="shop_cord">
+                    <span class="overlay"></span>
+                    <img src="./image/fig.png">
+                    <h3>fashion</h3>
+                </div>
+                <div class="shop_cord">
+                    <span class="overlay"></span>
+                    <img src="./image/beauty.png">
+                    <h3>beauty</h3>
+                </div>
+                <div class="shop_cord">
+                    <span class="overlay"></span>
+                    <img src="./image/electronics.png">
+                    <h3>electronics</h3>
+                </div>
+                <div class="shop_cord">
+                    <span class="overlay"></span>
+                    <img src="./image/fig.png">
+                    <h3>fig</h3>
+                </div>
+                <div class="shop_cord">
+                    <span class="overlay"></span>
+                    <img src="./image/glosary.png">
+                    <h3>glosary</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="online_shop_header">
+            <div class="online_shop_inner">
+                <div class="online_shop_text">
+                    <h2>SHOP ONLINE FROM YOUR VICINITY</h2>
+                    <p>We are a one-stop-shop for all your shopping needs, listing a wide range of hyperlocal stores
+                        (currently in Bengaluru). Our platform is your go-to place to find clothes, shoes, beauty
+                        products, hardware, electronics, and much more.</p>
+                </div>
+                <div class="online_shop_image">
+                    <img src="./image/electronics.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="our_brand_header">
+            <div class="our_brand_text">
+                <h2>Choose By Brands</h2>
+            </div>
+            <div class="our_brands">
+                <div class="our_brand_div">
+                    <img src="./image/philips.png">
+                </div>
+                <div class="our_brand_div">
+                    <img src="./image/xiaomi.png">
+                </div>
+                <div class="our_brand_div">
+                    <img src="./image/titan.png">
+                </div>
+                <div class="our_brand_div">
+                    <img src="./image/sonata.png">
+                </div>
+                <div class="our_brand_div">
+                    <img src="./image/samsung.png">
+                </div>
+                <div class="our_brand_div">
+                    <img src="./image/dominos.png">
+                </div>
+                <div class="our_brand_div">
+                    <img src="./image/pizzahut.png">
+                </div>
+                <div class="our_brand_div">
+                    <img src="./image/lg.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="Payment_Process_header">
+            <div class="Payment_Process_inner">
+                <div class="payment_process_text">
+                    <div class="Payment_Process_div1">
+                    </div>
+                    <h3>Frequently Asked Questions</h3>
+                    <p>Updates on safe shopping in our store</p>
+                </div>
+                <div class="payment_process_text">
+                    <div class="Payment_Process_div2">
+                    </div>
+                    <h3>Online Payment Process</h3>
+                    <p>Updates on safe shopping in our store</p>
+                </div>
+                <div class="payment_process_text">
+                    <div class="Payment_Process_div3">
+                    </div>
+                    <h3>Home Delivery Options</h3>
+                    <p>Updates on safe shopping in our store</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script>
+        const menubtn = document.getElementById('ham-menu');
+        console.log(menubtn)
+        menubtn.style.zIndex = '2000'
+        const menuList = document.querySelector('.nav_link');
+        console.log(menuList);
+        const backmenu = document.getElementById('back-menu');
+        backmenu.style, zIndex = '3000'
+
+        menubtn.addEventListener('click', () => {
+            menubtn.style.visibility = 'hidden'
+            backmenu.style.visibility = 'visible'
+            menuList.style.right = '0'
+            menubtn.style.zIndex = '100'
+        })
+        backmenu.addEventListener('click', () => {
+            menubtn.style.visibility = 'visible'
+            backmenu.style.visibility = 'hidden'
+            menuList.style.right = '-100%'
+        })
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
